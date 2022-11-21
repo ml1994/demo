@@ -1,10 +1,15 @@
+/*
+ * @Description:
+ * @Author: ma.cq
+ * @Date: 2022-11-21 15:21:46
+ * @LastEditors: ma.cq
+ * @LastEditTime: 2022-11-21 16:17:50
+ */
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 
 import App from './App.vue'
 import router from './router'
-
-import './assets/main.css'
 
 const app = createApp(App)
 
