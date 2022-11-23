@@ -3,7 +3,7 @@
  * @Author: ma.cq
  * @Date: 2022-11-21 15:21:46
  * @LastEditors: ma.cq
- * @LastEditTime: 2022-11-21 16:05:02
+ * @LastEditTime: 2022-11-23 20:36:38
  */
 /* eslint-env node */
 require('@rushstack/eslint-patch/modern-module-resolution')
@@ -31,6 +31,7 @@ module.exports = {
       {
         semi: false,
         singleQuote: true,
+        endOfLine: 'auto',
       },
     ],
   },

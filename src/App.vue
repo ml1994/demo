@@ -1,20 +1,15 @@
+<!--
+ * @Description: 
+ * @Author: ma.cq
+ * @Date: 2022-11-21 15:21:46
+ * @LastEditors: ma.cq
+ * @LastEditTime: 2022-11-23 20:34:17
+-->
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <header>
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
-
   <RouterView />
 </template>
 
