@@ -3,7 +3,7 @@
  * @Author: ma.cq
  * @Date: 2022-11-23 19:42:52
  * @LastEditors: ma.cq
- * @LastEditTime: 2022-11-23 20:36:43
+ * @LastEditTime: 2022-11-24 16:32:27
 -->
 <template>
   <div class="wrap">
@@ -47,17 +47,18 @@ defineExpose({
 })
 </script>
 
-<style scoped>
+<style scoped lang="less">
 .wrap {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 2px;
-}
-.bar {
-  height: inherit;
-  width: 0;
-  background-color: aqua;
+
+  .bar {
+    height: inherit;
+    width: 0;
+    background-color: aqua;
+  }
 }
 </style>
