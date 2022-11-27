@@ -3,7 +3,7 @@
  * @Author: ma.cq
  * @Date: 2022-11-21 15:21:46
  * @LastEditors: ma.cq
- * @LastEditTime: 2022-11-25 19:53:54
+ * @LastEditTime: 2022-11-27 17:04:22
 -->
 <script setup lang="ts">
 import { RouterView } from 'vue-router'
@@ -53,7 +53,9 @@ const change = (index: number) => {
 </script>
 
 <template>
+  <RouterLink to="/trans">trans</RouterLink>
   <RouterView />
+  <span>--------------------------------------------------------</span>
   <SendParams ref="sp" :fp="name" :arr="list" @on-pp="getChild" />
 
   <div class="tabs">
