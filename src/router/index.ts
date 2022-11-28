@@ -3,7 +3,7 @@
  * @Author: ma.cq
  * @Date: 2022-11-21 15:21:46
  * @LastEditors: ma.cq
- * @LastEditTime: 2022-11-27 17:03:26
+ * @LastEditTime: 2022-11-28 12:21:42
  */
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
@@ -42,6 +42,11 @@ const router = createRouter({
       path: '/trans',
       name: 'trans',
       component: () => import('../views/TransView.vue'),
+    },
+    {
+      path: '/provide',
+      name: 'provide',
+      component: () => import('../views/ProvideView.vue'),
     },
     {
       path: '/abc',

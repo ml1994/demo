@@ -3,8 +3,10 @@
  * @Author: ma.cq
  * @Date: 2022-11-21 15:21:46
  * @LastEditors: ma.cq
- * @LastEditTime: 2022-11-25 13:31:02
+ * @LastEditTime: 2022-11-28 13:46:16
  */
+import Mitt from 'mitt'
+
 import { createApp } from 'vue'
 import { createPinia } from 'pinia'
 import { perPlugin } from './plugins/persistence'
@@ -19,6 +21,14 @@ store.use(
     key: 'pinia',
   })
 )
+
+const mit = Mitt()
+app.config.globalProperties.$bus = mit
+declare module 'vue' {
+  interface ComponentCustomProperties {
+    $bus: typeof mit
+  }
+}
 
 app.use(store)
 app.use(router)
